@@ -10,12 +10,10 @@ public class TouchThroughView extends ReactViewGroup {
     super(context);
   }
 
-  @Override
   public boolean onInterceptTouchEvent(MotionEvent event) {
     return true;
   }
 
-  @Override
   public boolean onTouchEvent(MotionEvent event) {
     return true;
   }
