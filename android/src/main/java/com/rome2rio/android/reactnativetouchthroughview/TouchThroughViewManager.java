@@ -8,12 +8,10 @@ public class TouchThroughViewManager
 
     public static final String REACT_CLASS = "R2RTouchThroughView";
 
-    @Override
     public String getName() {
         return REACT_CLASS;
     }
 
-    @Override
     protected TouchThroughView createViewInstance(
             ThemedReactContext reactContext) {
         return new TouchThroughView(reactContext);
