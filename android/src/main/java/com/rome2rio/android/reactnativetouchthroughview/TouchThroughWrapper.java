@@ -13,7 +13,6 @@ public class TouchThroughWrapper extends ReactViewGroup {
         super(context);
     }
 
-    @Override
     public boolean onInterceptTouchEvent(MotionEvent event) {
         // Recursively find out if an absolute x/y position is hitting a child view and stop event
         // propagation if a hit is found.
@@ -55,7 +54,6 @@ public class TouchThroughWrapper extends ReactViewGroup {
         return isTouchingTouchThroughView;
     }
 
-    @Override
     public boolean onTouchEvent(MotionEvent event) {
         // Pass through touch events to layer behind.
         return false;
