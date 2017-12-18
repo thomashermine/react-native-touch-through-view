@@ -9,11 +9,9 @@ public class TouchThroughWrapperManager
 
     public static final String REACT_CLASS = "R2RTouchThroughWrapper";
 
-    @Override
     public String getName() {
         return REACT_CLASS;
     }
-    @Override
     public TouchThroughWrapper createViewInstance(ThemedReactContext context) {
       return new TouchThroughWrapper(context);
     }
